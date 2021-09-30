@@ -46,8 +46,6 @@ const Signup = () => {
         }
     }
 
-    // ...
-
     if (redirect) return <Redirect to="/login" /> // You can have them redirected to profile (your choice)
 
     return (
@@ -77,7 +75,7 @@ const Signup = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Signup;
