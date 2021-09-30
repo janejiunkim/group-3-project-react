@@ -1,4 +1,3 @@
-// Imports
 import React, { useState } from 'react';
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
@@ -22,7 +21,7 @@ const Login = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const userData = { email, password };
-    
+
         axios.post(`${REACT_APP_SERVER_URL}/users/login`, userData)
         .then(response => {
             const { token } = response.data;
@@ -40,8 +39,6 @@ const Login = (props) => {
             alert('Either email or password is incorrect. Please try again');
         });
     }
-
-    // ...
 
     if (props.user) return <Redirect to="/profile" /> // double check
 
@@ -64,7 +61,7 @@ const Login = (props) => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Login;
