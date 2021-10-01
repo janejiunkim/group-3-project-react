@@ -5,6 +5,10 @@ html {
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
+
+.game {
+  text-align: center;
+}
 .footer {
   position: absolute;
   bottom: 0;

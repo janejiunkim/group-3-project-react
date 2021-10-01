@@ -64,7 +64,6 @@ function App() {
   return (
     <div className="App">
       <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
-      <Trending />
       <div className="container mt-5">
         <Switch>
           <Route path='/signup' component={Signup} />

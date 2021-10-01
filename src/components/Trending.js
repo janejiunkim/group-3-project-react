@@ -1,27 +1,30 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import GameCard from "./GameCard";
+import Game from './Game';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Trending = () => {
-    const [games, setGames] = useState([])
+    const [trendingGames, setGames] = useState([]);
+
+    let url = process.env.REACT_APP_API + 'videogames/trending/';
 
     useEffect(() => {
-        async function fetchGames() {
-            const response = await axios.get('http://localhost:8000/videogames/trending')
-            console.log(response)
+        axios.get(url)
+        .then(response => {
+            setGames(response.data);
+            console.log('INSIDE USE EFFECT', trendingGames);
+        });
+    }, []);
 
-            setGames(response.data.game)
-            // axios.get(``)
-            //     .then((res) => {
-            //         setGames(res.data)
-            //     })
-        }
-        fetchGames()
-        console.log(games)
-    }, [])
+    console.log('STATE', trendingGames);
+
     
     return (
-        <div>
+        <div className="trending">
+            <Row className="mx-0">
+                <Game as={Col}></Game>
+            </Row>
 
         </div>
     )

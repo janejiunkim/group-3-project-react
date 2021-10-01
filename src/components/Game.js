@@ -3,13 +3,13 @@ import Figure from 'react-bootstrap/Figure'
 
 function Game() {
     return (
-        <div>
+        <div className = "game">
             <Figure>
                 <Figure.Image
-                    width={171}
-                    height={180}
-                    alt="171x180"
-                    src="https://i.imgur.com/lB3unIJ.jpg"
+                    width={200}
+                    height={300}
+                    alt="150x300"
+                    src="https://i.imgur.com/WNnaeum.jpg"
                 />
                 <Figure.Caption>
                     Apex Legends
