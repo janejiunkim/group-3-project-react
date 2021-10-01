@@ -10,7 +10,6 @@ const Welcome = () => {
             <Trending />
             <Review  />
         </div>
-
     )
 }
 

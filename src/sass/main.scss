@@ -1,0 +1,10 @@
+// overwrite theme variables
+
+
+// test
+$primary: rgb(155, 155, 155);
+$secondary: blue;
+$dark: rgb(18, 13, 59);
+
+// import bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
