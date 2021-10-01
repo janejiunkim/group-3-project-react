@@ -6,7 +6,7 @@ const Welcome = () => {
         <div>
             <h2>Trending NOW</h2>
             <p>Welcome to my app.</p>
-
+        </div>
     )
 }
 
