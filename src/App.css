@@ -3,7 +3,7 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 60px; /* Margin bottom by footer height */
+  min-height: 100vh;
 }
 
 .game {
