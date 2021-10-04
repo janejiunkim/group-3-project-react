@@ -4,46 +4,43 @@ import GameCard from "./GameCard";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Trending = () => {
-  const [trendingGames, setGames] = useState([]);
+const AllGames = () => {
+  const [allGames, setGames] = useState([]);
 
   //   let url = process.env.REACT_APP_SERVER_URL + "videogames/trending/"; //process.env.REACT_APP_API is undefined
-  let url = "videogames/trending/";
+  let url = "videogames/names/";
 
   useEffect(() => {
     axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL;
     axios.get(url).then((response) => {
       setGames(response.data.game);
-      //   console.log("Testing trending", response.data.game);
     });
   }, []);
 
-  console.log("STATE", trendingGames);
-
   // this makes sure that the data is loaded before passing it through
-  function trendingList(n) {
+  function allGamesList(n) {
     let gameArr = [];
     for (let i = 0; i < n; i++) {
       gameArr.push(
         <Col>
-          <GameCard gameData={trendingGames[i]} width={11}></GameCard>
+          <GameCard gameData={allGames[i]} width={10}></GameCard>
         </Col>
       );
     }
     return gameArr;
   }
 
-  let displayTrendingList = trendingGames.length ? (
-    trendingList(6)
+  let displayAllGamesList = allGames.length ? (
+    allGamesList(allGames.length)
   ) : (
     <p>Loading...</p>
   );
 
   return (
     <div className="trending">
-      <Row className="mx-0">{displayTrendingList}</Row>
+      <Row className="mx-0">{displayAllGamesList}</Row>
     </div>
   );
 };
 
-export default Trending;
+export default AllGames;

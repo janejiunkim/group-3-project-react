@@ -2,7 +2,7 @@ import React from "react";
 
 const GameCard = (props) => {
   return (
-    <div className="card" style={{ width: "12rem" }}>
+    <div className="card" style={{ width: props.width + "rem" }}>
       <img
         src={"https://" + props.gameData.cover.url}
         className="card-img-top"
