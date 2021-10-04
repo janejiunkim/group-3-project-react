@@ -1,10 +1,24 @@
-
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-​
-.logout-link {
+​ .logout-link {
   cursor: pointer;
+}
+
+.score-box {
+  text-align: center;
+  background: rgb(18, 13, 59);
+  color: white;
+  padding: 4px;
+  margin: 14px;
+}
+
+.trailers {
+  height: 600px;
+}
+
+.hide {
+  display: none;
 }

@@ -33,3 +33,12 @@ body {
 .review-card .card-text {
   color: white;
 }
+
+.card {
+  text-decoration: "none";
+}
+
+.center {
+  text-align: center;
+}
+
