@@ -17,6 +17,7 @@ import Profile from "./components/Profile";
 import Welcome from "./components/Welcome";
 import Games from "./components/Games";
 import Blog from "./components/Blog";
+import Game from "./components/Game";
 // import Trending from './components/Trending';
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
@@ -96,6 +97,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/games" component={Games} />
           <Route path="/blog" component={Blog} />
+          <Route path="/game" component={Game} />
         </Switch>
       </div>
       <Footer />
