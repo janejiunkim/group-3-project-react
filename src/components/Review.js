@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function Review() {
     return (
-        <div className="card">
+        <div className="review-card card">
             <Card>
                 <Card.Header>Review</Card.Header>
                     <Card.Body>

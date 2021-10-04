@@ -5,7 +5,10 @@ import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 
 // CSS
-import "./sass/main.scss";
+import './sass/main.scss';
+import './App.css';
+
+
 
 // Components
 import Signup from "./components/Signup";
