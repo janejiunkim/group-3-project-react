@@ -23,7 +23,7 @@ const About = () => {
               </Card.Body>
             </Card>
             <Card as={Col} style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Img variant="top" src="https://i.imgur.com/8KIFKsJ.jpg" />
               <Card.Body>
                 <Card.Title>Jane Kim</Card.Title>
                 <Card.Text>
