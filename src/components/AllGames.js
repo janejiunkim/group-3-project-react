@@ -21,11 +21,13 @@ const AllGames = () => {
   function allGamesList(n) {
     let gameArr = [];
     for (let i = 0; i < n; i++) {
-      gameArr.push(
-        <Col>
-          <GameCard gameData={allGames[i]} width={10}></GameCard>
-        </Col>
-      );
+      if (allGames[i]["gamedata"]["name"]) {
+        gameArr.push(
+          <Col>
+            <GameCard gameData={allGames[i]} width={10}></GameCard>
+          </Col>
+        );
+      }
     }
     return gameArr;
   }

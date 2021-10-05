@@ -16,9 +16,10 @@ const About = () => {
               <Card.Body>
                 <Card.Title>Charles Clemmer</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A native of St. Louis, Charles moved to San Francisco to
+                  obtain a BS in Chemistry and has lived there ever since.
                 </Card.Text>
+                <Card.Text>Front-end, Back-end, Gitmaster</Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
@@ -26,10 +27,7 @@ const About = () => {
               <Card.Img variant="top" src="https://i.imgur.com/8KIFKsJ.jpg" />
               <Card.Body>
                 <Card.Title>Jane Kim</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Text>Front-end</Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
@@ -37,10 +35,7 @@ const About = () => {
               <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Kasai Avery</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Text>Front-end</Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
