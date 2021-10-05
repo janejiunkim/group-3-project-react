@@ -13,12 +13,12 @@ const DetailedGameCard = (props) => {
 
   return (
     <div className="card">
-      <div>
-        <h1 style={{ textAlign: "left", width: props.width + "rem" }}>
-          {props.gameData.name}
-        </h1>
-        {/* want to remove border eventually */}
-      </div>
+      <Row>
+        <div>
+          <h1>{props.gameData.name}</h1>
+          {/* want to remove border eventually */}
+        </div>
+      </Row>
       <Row>
         <Col xs={4}>
           <img
